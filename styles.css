@@ -101,6 +101,15 @@ main {
     background-color: var(--off-white);
 }
 
+.main-tables-container--slider {
+    display: flex;
+    height: 350px;
+    overflow-x:scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    text-align: center;
+}
+
 .main-exchange-container {
     width: 100%;
     height: auto;
@@ -144,10 +153,13 @@ main {
 }
 
 .main-currency-table {
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    margin:0 auto;
+    position: relative;
+    scroll-snap-align: center;
+    width: 100%;
+    height: 300px;
+    min-width: 300px;
+    max-width: 500px;    
+    padding: 1em;
     font-family: "Inter", sans-serif;
 }
 
@@ -242,15 +254,7 @@ main {
     color: var(--warm-black);
 }
 
-.main-commissions-table {
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    margin:0 auto;
-    font-family: "Inter", sans-serif;
-}
-
-.main-commissions-table .commissions-table--title {
+.main-currency-table .commissions-table--title {
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -460,7 +464,7 @@ main {
     width: 100%;
     min-width: 320px;
     padding-bottom: 70px;
-    text-align: center;
+    
 }
 
 .plans--title {
