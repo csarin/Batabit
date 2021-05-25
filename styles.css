@@ -416,7 +416,7 @@ main {
 }
 
 .clock {
-    background-image: url("./../assets/icons/clock.svg");
+    background-image: url("./assets/icons/clock.svg");
 }
 
 .dollar {
